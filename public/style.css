@@ -1,0 +1,287 @@
+:root {
+  --date-width: 160px;
+  --sub-width: 160px;
+  --view-width: 240px;
+  --like-width: 140px;
+  --watched-width: 260px;
+  --avg-view-width: 172px;
+
+  --increased-color: #41a200;
+  --button-color: #646ff3;
+  --success-color: #58d300;
+  --error-color: #f10000;
+  --warning-color: #ff8800;
+  --like-youtube-color: #eb5151;
+}
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Common CSS */
+.app {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  background-color: #eae9ec;
+}
+
+.button {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  padding: 6px 28px;
+  border-radius: 16px;
+  border-width: 0;
+  background-color: var(--button-color);
+  outline: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.mr-11 {
+  margin-right: 44px;
+}
+
+.px-5 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pr-11 {
+  padding-right: 11px;
+}
+
+.--increased {
+  color: var(--increased-color);
+}
+
+.--success {
+  color: var(--success-color);
+}
+
+.--error {
+  color: var(--error-color);
+}
+
+.--warning {
+  color: var(--warning-color);
+}
+
+.button--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.no-value {
+  position: relative;
+}
+
+.no-value::before {
+  content: "";
+  background-color: #ccc;
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  top: 8px;
+}
+
+/* Analytics */
+.analytics {
+  margin-top: 20px;
+}
+
+.analytics__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.analytics__header {
+  display: flex;
+  width: 100%;
+  background-color: #444;
+  color: #fff;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.analytics__header-col {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.analytics__header-date {
+  min-width: var(--date-width);
+}
+
+.analytics__header-sub {
+  min-width: var(--sub-width);
+}
+
+.analytics__header-view {
+  min-width: var(--view-width);
+}
+
+.analytics__header-like {
+  min-width: var(--like-width);
+}
+
+.analytics__header-watched {
+  min-width: var(--watched-width);
+}
+
+.analytics__header-avg-view {
+  min-width: var(--avg-view-width);
+}
+
+.analytics__record {
+  font-size: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #eee;
+}
+
+.analytics__record:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+.analytics__record:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+.analytics__date {
+  min-width: var(--date-width);
+}
+
+.analytics__date > div:first-child {
+  min-width: 92px;
+}
+
+.analytics__date > div:nth-child(2) {
+  color: #9a9a9a;
+}
+
+.analytics__sub {
+  min-width: var(--sub-width);
+}
+
+.analytics__sub > div:first-child {
+  min-width: 40px;
+  margin-right: 20px;
+}
+
+.analytics__view {
+  min-width: var(--view-width);
+}
+
+.analytics__view > div:first-child {
+  min-width: 64px;
+  margin-right: 20px;
+}
+
+.analytics__like {
+  min-width: var(--like-width);
+}
+
+.analytics__like > div:first-child {
+  min-width: 36px;
+  margin-right: 20px;
+}
+
+.analytics__watched {
+  min-width: var(--watched-width);
+}
+
+.analytics__watched > div:first-child {
+  min-width: 72px;
+  margin-right: 20px;
+}
+
+.analytics__avg-view {
+  min-width: var(--avg-view-width);
+}
+
+.analytics__avg-view > div:first-child {
+  min-width: 72px;
+  margin-right: 20px;
+}
+
+.find-date {
+  text-transform: uppercase;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.find-date__title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--like-youtube-color);
+}
+
+.find-date__group {
+  display: flex;
+}
+
+.find-date__date-label {
+  margin-right: 4px;
+}
+
+.find-date__date-input {
+  padding: 4px 8px;
+  font-size: 15px;
+  border-width: 1px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.find-date__start-group {
+  margin-right: 40px;
+}
+
+.find-date__wrap-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.find-date__submit {
+  background-color: var(--like-youtube-color);
+}
+
+.find-date__submit:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.find-date__load-btn {
+  text-transform: none;
+}
+
+.find-date__load-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.find-date__nct {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  height: 24px;
+  text-transform: none;
+  font-weight: 500;
+}

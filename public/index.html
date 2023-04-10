@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <form class="find-date">
+        <h4 class="find-date__title">Find your youtube stats by date</h4>
+        <div class="find-date__group">
+          <div class="find-date__start-group">
+            <label class="find-date__date-label" for="start-date"
+              >Start Date</label
+            >
+            <input
+              type="date"
+              class="find-date__date-input"
+              id="start-date"
+              name="startDate"
+            />
+          </div>
+          <div class="find-date__end-group">
+            <label class="find-date__date-label" for="end-date">End Date</label>
+            <input
+              type="date"
+              class="find-date__date-input"
+              id="end-date"
+              name="endDate"
+            />
+          </div>
+        </div>
+        <div class="find-date__wrap-btn">
+          <input
+            type="submit"
+            value="Find"
+            class="find-date__submit button mr-11"
+          />
+          <button type="button" class="find-date__load-btn button">Load</button>
+        </div>
+
+        <h4 class="find-date__nct"></h4>
+      </form>
+
+      <div class="analytics">
+        <div div class="analytics__title">
+          Youtube stats summary / user statistics for you
+          <span id="start-end-dates"></span>
+        </div>
+        <!-- Header -->
+        <div class="analytics__header px-5">
+          <div class="analytics__header-col analytics__header-date">Date</div>
+          <div class="analytics__header-col analytics__header-sub">
+            Subscribers
+          </div>
+          <div class="analytics__header-col analytics__header-view">
+            Video Views
+          </div>
+          <div class="analytics__header-col analytics__header-like">
+            Video Likes
+          </div>
+          <div class="analytics__header-col analytics__header-watched">
+            Estimated Minutes Watched
+          </div>
+          <div class="analytics__header-col analytics__header-avg-view">
+            Average View Duration
+          </div>
+        </div>
+
+        <!-- Records -->
+        <div class="analytics__list-record"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
