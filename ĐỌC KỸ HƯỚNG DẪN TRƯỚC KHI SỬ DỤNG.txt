@@ -1,0 +1,8 @@
+- Vì ở đây chỉ là sources thôi nên yêu cầu bỏ thư viện vào
+
+- Tải NodeJS về nếu máy tính không có
+- Chạy lệnh "npm i" trên Terminal nếu chưa có thư mục node_modules
+- Copy thư mục yt bỏ vào project (cái này không có thì đi xin)
+- Chạy lệnh "node server.js"
+- Cuối cùng ném dòng này vào trình duyệt
+	http://localhost:4000/
