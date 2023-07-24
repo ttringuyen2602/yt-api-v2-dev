@@ -1,5 +1,6 @@
 - Chạy lệnh "npm i" trên Terminal
 - Chạy lệnh "node server.js"
 - Cuối cùng mở đường dẫn sau vào trình duyệt web: http://localhost:4000/
+- Chú ý, nếu token hết hạn thì xóa nội dung trong file token đi để tạo token mới
 
 netstat -ano | findstr 127.0.0.1:9900 (Lệnh check port 9900 có đang được dùng hay không)
